@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pattern 1</title>
+</head>
+
+<body>
+
+<h2>Alphabet Pattern</h2>
+
+<pre>
+<script>
+let n = 5;
+
+for(let i = 1; i <= n; i++){
+    let ch = String.fromCharCode(64 + i);
+
+    for(let j = 1; j <= i; j++){
+        document.write(ch + " ");
+    }
+
+    document.write("\n");
+}
+</script>
+</pre>
+
+</body>
+</html>
