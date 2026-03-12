@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pattern 2</title>
+</head>
+
+<body>
+
+<h2>Alphabet Reverse Pattern</h2>
+
+<pre>
+<script>
+
+let n = 5;
+
+for(let i = n; i >= 1; i--){
+    let ch = String.fromCharCode(64 + i);
+
+    for(let j = 1; j <= i; j++){
+        document.write(ch + " ");
+    }
+
+    document.write("\n");
+}
+
+</script>
+</pre>
+
+</body>
+</html>
