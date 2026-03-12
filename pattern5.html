@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Star Pattern 1</title>
+</head>
+<body>
+
+<pre id="pattern"></pre>
+
+<script>
+let rows = 5;
+let output = "";
+
+for (let i = rows; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+        output += "*";
+    }
+    output += "\n";
+}
+
+document.getElementById("pattern").textContent = output;
+</script>
+
+</body>
+</html>
