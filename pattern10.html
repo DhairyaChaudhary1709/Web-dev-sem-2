@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Pattern</title>
+<style>
+pre{
+font-size:20px;
+font-family:monospace;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Number Pattern</h2>
+<pre id="pattern"></pre>
+
+<script>
+
+let n = 5;
+let output = "";
+
+for(let i = 1; i <= n; i++){
+
+    for(let j = i; j < i + i; j++){
+        output += j;
+    }
+
+    for(let j = i + i - 2; j >= i; j--){
+        output += j;
+    }
+
+    output += "\n";
+}
+
+document.getElementById("pattern").textContent = output;
+
+</script>
+
+</body>
+</html>
