@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inverted Star Pattern</title>
+</head>
+<body>
+
+<h2>Inverted Star Pattern</h2>
+<pre id="pattern2"></pre>
+
+<script>
+let n = 5;
+let pattern = "";
+
+for (let i = n; i >= 1; i--) {
+
+    for (let j = n; j > i; j--) {
+        pattern += " ";
+    }
+
+    for (let k = 1; k <= i; k++) {
+        pattern += "*";
+    }
+
+    pattern += "\n";
+}
+
+document.getElementById("pattern2").textContent = pattern;
+</script>
+
+</body>
+</html>
