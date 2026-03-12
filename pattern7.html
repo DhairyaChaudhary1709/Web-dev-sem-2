@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diamond Star Pattern</title>
+</head>
+<body>
+
+<pre id="pattern"></pre>
+
+<script>
+
+let rows = 5;
+let output = "";
+
+// Upper part
+for (let i = 1; i <= rows; i++) {
+
+    for (let j = rows; j > i; j--) {
+        output += " ";
+    }
+
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        output += "*";
+    }
+
+    output += "\n";
+}
+
+// Lower part
+for (let i = rows - 1; i >= 1; i--) {
+
+    for (let j = rows; j > i; j--) {
+        output += " ";
+    }
+
+    for (let k = 1; k <= (2 * i - 1); k++) {
+        output += "*";
+    }
+
+    output += "\n";
+}
+
+document.getElementById("pattern").textContent = output;
+
+</script>
+
+</body>
+</html>
