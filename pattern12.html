@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pattern 2</title>
+</head>
+
+<body>
+
+<h2>Number Pattern 2</h2>
+
+<pre id="output"></pre>
+
+<script>
+
+let n = 5;
+let result = "";
+
+for (let i = 1; i <= n; i++) {
+
+    for (let j = 1; j <= i; j++) {
+        result += i + " ";
+    }
+
+    result += "\n";
+}
+
+document.getElementById("output").textContent = result;
+
+</script>
+
+</body>
+</html>
