@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<input type="number" id="n">
+<button onclick="check()">Check</button>
+
+<p id="ans"></p>
+
+<script>
+function check() {
+    let n = Number(document.getElementById("n").value);
+    let prime = true;
+
+    for(let i=2; i<n; i++) {
+        if(n % i == 0) {
+            prime = false;
+        }
+    }
+
+    document.getElementById("ans").innerHTML =
+    (prime && n>1) ? "Prime Number" : "Not Prime Number";
+}
+</script>
+
+</body>
+</html>
